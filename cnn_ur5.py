@@ -383,14 +383,14 @@ def build_camera_intrinsic_matrix():
     # --------------------------------------------------------
 
     cx = (
-        WIDTH
+        (WIDTH - 1) 
         /
         2.0
     )
 
 
     cy = (
-        HEIGHT
+        (HEIGHT - 1)
         /
         2.0
     )
