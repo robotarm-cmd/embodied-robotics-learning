@@ -11,3 +11,4 @@ Then, import the model of “train_cnn_v1.py” and conduct validation in “cnn
 
 "pick_place_unet_v1.py" mainly underwent the following modifications: the place placement position was added for training, so the heatmap became two images. It was difficult to train using only CNN because it can only recognize local features. This time, we sampled the Unet network for training and achieved good results.
 
+"action_map_to_ur5.py" mainly use results obtained by "pick_place_unet_v1.py" to realize pick and place for a cube.
