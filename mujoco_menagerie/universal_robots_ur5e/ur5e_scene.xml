@@ -1,0 +1,63 @@
+<mujoco model="ur5e_scene">
+    <include file="ur5e.xml"/>
+    <visual>
+
+        <headlight 
+            diffuse="0.6 0.6 0.6"
+            ambient="0.3 0.3 0.3"
+            specular="0 0 0"
+        />
+
+    </visual>
+
+    <worldbody>
+        <light 
+            pos="0.4 0 1.5"
+            dir="0 0 -1"
+            directional="true"
+        />
+
+        <geom 
+            name="table"
+            type="box"
+            pos="0.45 0 -0.025"
+            size="0.45 0.35 0.025"
+            rgba="0.65 0.65 0.65 1"
+        />
+
+        <body
+            name="cube"
+            pos="0.55 0.15 0.03"
+        >
+            <geom 
+                name="cube_geom"
+                type="box"
+                size="0.03 0.03 0.03"
+                rgba="1 0.15 0.10 1"
+            />
+        </body>
+
+        <body
+            name="place"
+            pos="0.30 -0.18 0.005"
+        >
+            <geom 
+                name="place_geom"
+                type="box"
+                size="0.05 0.05 0.005"
+                rgba="0.10 1 0.15 1"
+            />
+        </body>
+
+        <camera 
+            name="top_camera"
+            pos="0.45 0 1.35"
+            quat="1 0 0 0"
+            fovy="60"
+        />
+
+            
+
+    </worldbody>
+
+</mujoco>
